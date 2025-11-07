@@ -15,32 +15,98 @@
     />
     <title>Toplearn</title>
   </head>
+  <!-- npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css --watch -->
+
   <body>
-    <header class="bg-slate-800">
+    <header class="bg-[url(../images/landing.jpg)] bg-cover bg-center pb-12">
       <section
-        class="flex pr-4 text-white pt-8 pb-6 pl-4 items-center container mx-auto"
+        class="flex pr-4 text-white pt-5 pb-3 pl-4 items-center container mx-auto"
       >
         <div>
-          <img class="w-[70px]" src="images/logo.png" alt="لوگو" />
+          <img class="w-[70px] ml-2" src="images/logo.png" alt="لوگو" />
         </div>
 
-        <div class="mr-4 text-2xl">
-          <i class="fa fa-bars"></i>
-        </div>
+        <div
+          class="flex items-center divide-x-2 divide-slate-400 border-l-2 border-slate-400"
+        >
+          <div class="text-2xl pl-2 pr-2">
+            <i class="fa fa-bars"></i>
+          </div>
 
-        <div class="mr-4 text-xl">
-          <i class="fa fa-search"></i>
+          <div class="text-xl pr-2 pl-2">
+            <i class="fa fa-search"></i>
+          </div>
         </div>
 
         <div class="mr-4 space-x-2 text-xl items-center flex">
           <i class="fa fa-user"></i>
-          <a href="#" class="text-sm">ورود</a>
+          <a href="#" class="text-sm after:content-['_/']">ورود</a>
           <a href="#" class="text-sm">ثبت نام</a>
         </div>
       </section>
 
-      <section></section>
-      <section></section>
+      <section
+        class="container mx-auto pt-6 pb-9 px-10 items-center text-center text-white text-xl"
+      >
+        <p>خودآموزی ، کسب تجربه ، ورود به بازار کار با تاپ لرن</p>
+      </section>
+
+      <section class="pb-9 flex items-center justify-center">
+        <input
+          class="w-4/5 bg-white rounded-4xl lg:w-4/10 py-3 mb-4 px-5 placeholder-gray-800 shadow-lg ring-8 ring-slate-500/60"
+          type="text"
+          placeholder="چی میخوای یاد بگیری؟"
+        />
+      </section>
+
+      <section
+        class="text-white hidden lg:flex lg:justify-center lg:text-center"
+      >
+        <div>
+          <img src="images/stat-student.png" alt="" />
+          <p>551,892</p>
+          <p>نفر دانشجو</p>
+        </div>
+        <div>
+          <img src="images/stat-teacher.png" alt="" />
+          <p>212</p>
+          <p>مدرس مجرب</p>
+        </div>
+        <div>
+          <img src="images/stat-time.png" alt="" />
+          <p>517,499</p>
+          <p>دقیقه آموزش</p>
+        </div>
+      </section>
     </header>
+
+    <section
+      class="hidden lg:flex lg:justify-between container mx-auto mt-6 text-gray-800 p-3"
+    >
+      <div class="flex space-x-6">
+        <div>
+          <a href="#">برنامه نویسی و طراحی وب</a>
+        </div>
+        <div>
+          <a href="#"> آموزش برنامه نویسی به کودکان </a>
+        </div>
+        <div>
+          <a href="#"> آموزش ورود به دنیای برنامه نویسی </a>
+        </div>
+        <div>
+          <a href="#"> دوره های مخصوص ناشنوایان </a>
+        </div>
+      </div>
+      <div class="flex items-center text-sky-500 text-sm">
+        <img class="w-10" src="images/goldVip.png" />
+        <a href="#">مخصوص اعضای ویژه</a>
+      </div>
+    </section>
+
+    <!-- slider -->
+    <section class="mb-96 flex justify-center ">
+      <img class="rounded-2xl" src="images/slide2.png" alt="" />
+    </section>
+    <!-- slider -->
   </body>
 </html>
