@@ -4,6 +4,27 @@ body {
     font-family: Vazirmatn, sans-serif;
     direction: rtl;
 }
-*{
+
+* {
     font-family: Vazirmatn, sans-serif;
+}
+
+
+@theme {
+    --container-mobile {
+        padding-left: 3rem;
+        /* 1rem = 16px */
+        padding-right: 3rem;
+        /* 1rem = 16px */
+    }
+}
+
+
+
+@utility container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+
 }
